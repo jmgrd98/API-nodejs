@@ -1,4 +1,4 @@
-const sequelize = require("sequelize")
+const Sequelize = require("sequelize")
 
 const DB_NAME = "teste"
 const DB_USER = "root"
@@ -6,12 +6,12 @@ const DB_PASS = "root"
 const DB_CONFIG = {
     "dialect": "mysql",
     "host": "localhost",
-    "port": 3000
+    "port": 3306
 }
 
 let db = {}
     try {
-        db = new sequelize(DB_NAME, DB_USER, DB_PASS, DB_CONFIG)
+        db = new Sequelize(DB_NAME, DB_USER, DB_PASS, DB_CONFIG)
     }
     catch(error){
         console.error("Error!!!")
@@ -27,7 +27,7 @@ let db = {}
     }
 
     Object.assign(db, {
-        hasConnection
+        hasConnection,
     })
 
     module.exports = db
