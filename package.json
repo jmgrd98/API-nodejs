@@ -2,8 +2,9 @@
   "name": "api-nodejs",
   "version": "1.0.0",
   "description": "Building an API with NodeJS",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "dev": "node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
