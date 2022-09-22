@@ -1,12 +1,12 @@
 const Sequelize = require("sequelize")
 
-const DB_NAME = "teste"
-const DB_USER = "root"
+const DB_NAME = "projeto_gama"
+const DB_USER = "postgres"
 const DB_PASS = "root"
 const DB_CONFIG = {
-    "dialect": "mysql",
+    "dialect": "postgres",
     "host": "localhost",
-    "port": 3306
+    "port": 5432
 }
 
 let db = {}
